@@ -6,3 +6,5 @@ For assignments, include branch information, dependencies, and instructions to r
 
 <!-- footnotes -->
 [^1]: Include the full official name and UTS email to clearly identify the author in assignment marking.
+
+Includes all necessary dependencies, specifies the branch, and provides clear instructions on how to run the software on localhost.
