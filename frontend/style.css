@@ -19,9 +19,18 @@ html, body {
   align-items: center;
 }
 
-.nav-center {
+.nav-left {
   flex: 1;
+}
+
+.nav-center {
+  flex: 0;
   justify-content: center;
+}
+
+.nav-right {
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .navbar a {
