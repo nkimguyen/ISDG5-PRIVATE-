@@ -175,6 +175,15 @@ html, body {
   cursor: pointer;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit; /* keeps same colour as h1 */
+}
+
+.logo-link:hover {
+  opacity: 0.8; /* slight hover effect */
+}
+
 /* header */
 header{padding: 20px;
       text-align: center;
