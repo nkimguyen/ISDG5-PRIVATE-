@@ -5,14 +5,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const user = JSON.parse(sessionStorage.getItem("user"));
 
-  if (user) {
-    welcomeMessage.textContent = `Welcome! Your email address is ${user.email}.`;
+if (user) {
+  if (user.role === "staff") {
+    welcomeMessage.textContent = `Welcome staff! Your email is ${user.email}`;
   } else {
-    welcomeMessage.textContent = "Please register!";
+    welcomeMessage.textContent = `Welcome! Your email is ${user.email}`;
   }
+}
 
   logoutButton.addEventListener("click", function () {
     sessionStorage.clear();
     window.location.href = "logout.html"
   })
 });
+

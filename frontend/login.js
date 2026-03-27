@@ -7,7 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    const user = {"email":email, "password":password}
+
+    const user = {email: email, password: password, role: "user"
+    };
+
     sessionStorage.setItem("user", JSON.stringify(user))
     window.location.href = "welcome.html"
   });

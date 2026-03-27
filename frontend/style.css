@@ -226,6 +226,13 @@ html, body {
   text-align: center;
 }
 
+.error-message {
+  display: none;
+  color: red;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
 /* header */
 header{padding: 20px;
       text-align: center;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Staff Registration Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="auth-page">
+        <h1>
+            <a href="index.html" class="logo-link">IoT Marketplace</a>
+        </h1>
+
+        <p>Register a new staff member.</p>
+
+        <div class="content-container">
+            <h1>Staff Registration Form</h1>
+
+            <form id="staff-register-form">
+                <table>
+                    <tr>
+                        <td><label for="staff_id">Staff ID</label></td>
+                        <td>
+                            <input type="text" id="staff_id" name="staff_id" required />
+                            <small id="staff-id-error" class="error-message"></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="staff_first_name">First Name</label></td>
+                        <td>
+                            <input type="text" id="staff_first_name" name="staff_first_name" required />
+                            <small id="staff-first-name-error" class="error-message"></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="staff_last_name">Last Name</label></td>
+                        <td>
+                            <input type="text" id="staff_last_name" name="staff_last_name" required />
+                            <small id="staff-last-name-error" class="error-message"></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="staff_email">Email</label></td>
+                        <td>
+                            <input type="email" id="staff_email" name="staff_email" required />
+                            <small id="staff-email-error" class="error-message"></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="reset" class="btn btn-secondary">Cancel</button></td>
+                        <td><button type="submit" class="btn btn-primary">Register</button></td>
+                    </tr>
+                </table>
+
+                <small id="form-error" class="error-message"></small>
+            </form>
+        </div>
+
+        <script src="staff-register.js"></script>
+    </body>
+</html>
