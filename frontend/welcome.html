@@ -3,36 +3,46 @@
   <head>
     <title>Account Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-      <nav class="navbar">
+       <nav class="navbar">
 
-          <div class="nav-left">
-              <a class="active" href="index.html">
-              <i class="fa fa-fw fa-home"></i> Home
-              </a>
-          </div>
+            <div class="nav-left">
+                <a href="index.html">
+                <i class="fa fa-fw fa-home"></i> Home
+                </a>
+            </div>
 
-          <div class="nav-center">
-              <form class="search-form">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-               </form>
-           </div>
+            <div class="nav-center">
+                <form class="search-form">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
 
-          <div class="nav-right">
-              <a href="#" id="account-link"><i class="fa fa-fw fa-user"></i> Account</a>
-              <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
-          </div>
+            <div class="nav-right">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn active">
+                      <i class="fa fa-user"></i> Account 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </div>
 
-      </nav>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
+            </div>
+        </nav>
 
       <div class="content-container">
         <h1>My Account</h1>
         <p id="welcome-message"></p>
         <button id="logoutBtn">Logout</button>
       </div>
-      
+
     <script src="welcome.js"></script>
   </body>
 </html>

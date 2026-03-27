@@ -18,16 +18,22 @@
 
             <div class="nav-center">
                 <form class="search-form">
-                    <input type="text" placeholder="Search.." name="search">
+                    <input type="text" placeholder="Search..." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
             </div>
 
             <div class="nav-right">
-                <a href="#" id="account-link"><i class="fa fa-fw fa-user"></i> Account</a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+                </div>
+
                 <a href="cart.html"><i class="fa fa-shopping-cart"></i> Cart</a>
             </div>
-
         </nav>
 
         <header>

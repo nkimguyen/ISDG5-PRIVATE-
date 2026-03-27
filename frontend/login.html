@@ -7,7 +7,7 @@
     </head>
 
 
-    <body>
+    <body class = "auth-page">
         <h1> IoT Marketplace </h1>
         <p> Log in to your account</p>
         <div class="content-container">
@@ -17,14 +17,14 @@
                 <tr>
                     <td><label for="email">Email</label></td>
                     <td>
-                    <input type="text" id="email" name="email" />
+                    <input type="email" id="email" name="email" required />
                     <small id="email-error" class="error-message"></small>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="password">Password</label></td>
                     <td>
-                    <input type="password" id="password" name="password" />
+                    <input type="password" id="password" name="password" required/>
                     <small id="password-error" class="error-message"></small>
                     </td>
                 </tr>
@@ -39,5 +39,5 @@
         </div>
         <script src="login.js"></script>
     </body>
-    
+
 </html>
