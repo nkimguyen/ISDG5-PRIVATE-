@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastName = document.getElementById("last_name").value;
     const email = document.getElementById("email").value;
 
-    const user = {"name": `${firstName} ${lastName}`, "email":email}
+    const user = {"name": `${firstName} ${lastName}`, "email":email, role: "user"}
     sessionStorage.setItem("user", JSON.stringify(user))
     window.location.href = "welcome.html"
   });

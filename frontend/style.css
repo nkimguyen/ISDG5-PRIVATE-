@@ -238,7 +238,122 @@ header{padding: 20px;
       text-align: center;
 }
 
-.content-container {
-  margin-left: 40px;
-  padding: 20px;
+/* accountlayout */
+.account-page {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 30px 40px;
+  background-color: #f7f7f7;
 }
+
+.account-main {
+  flex: 1;
+}
+
+.account-sidebar {
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.account-sidebar a {
+  display: block;
+  padding: 16px 20px;
+  color: white;
+  text-decoration: none;
+  border-top: 1px solid #eee;
+  font-size: 16px;
+}
+
+.account-sidebar a i,
+.sidebar-title i {
+  margin-right: 10px;
+}
+
+.account-sidebar a:hover {
+  background-color: #eaf4fb;
+}
+
+#logoutLink {
+  color: black;
+  font-weight: 500;
+}
+
+#logoutLink:hover {
+  background-color: #ffe5e5;
+}
+
+.account-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.account-box h2 {
+  margin: 0;
+  padding: 22px 30px;
+  border-bottom: 1px solid #eee;
+  font-size: 22px;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.account-item {
+  padding: 20px 10px;
+}
+
+.account-item i {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.account-item p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.account-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.details-box {
+  padding: 30px;
+}
+
+.details-box label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.details-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.button-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
