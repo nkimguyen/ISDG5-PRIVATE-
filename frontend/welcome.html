@@ -40,8 +40,48 @@
       <div class="account-container">
         <h1>My Account</h1>
         <p id="welcome-message"></p>
-        <button class="btn btn-secondary" id="logoutBtn">Logout</button>
-      </div>
+
+        <form id="account-form">
+            <table>
+                <tr>
+                    <td><label for="first_name">First Name</label></td>
+                    <td><input type="text" id="first_name" name="first_name" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name</label></td>
+                    <td><input type="text" id="last_name" name="last_name" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><input type="text" id="address" name="address"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number</label></td>
+                    <td><input type="text" id="phone" name="phone"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" class="btn btn-primary">Save Details</button></td>
+                    <td><button type="button" id="cancelRegistrationBtn" class="btn btn-secondary">Cancel Registration</button></td>
+                </tr>
+            </table>
+        </form>
+
+        <p id="account-status"></p>
+
+        <p>
+            <a href="order.html" id="order-link" class="btn btn-primary">Go to Orders</a>
+        </p>
+
+        <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+    </div>
 
     <script src="welcome.js"></script>
   </body>
