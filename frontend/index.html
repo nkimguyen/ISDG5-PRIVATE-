@@ -8,6 +8,18 @@
     </head>
 
     <body>
+
+        <div id="overlay" class="overlay" onclick="closeNav()"></div>
+        <div id="sideNav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <h3 class="side-title">Shop by Category</h3>
+            <a href="#">Smart Home</a>
+            <a href="#">Security Systems</a>
+            <a href="#">Lighting</a>
+            <a href="#">Wearables</a>
+        </div>
+
         <nav class="navbar">
 
             <div class="nav-left">
@@ -36,15 +48,70 @@
             </div>
         </nav>
 
-        <div class = "home-page-header">
+        <div class="sub-navbar">
+            <span class="menu-toggle" onclick="openNav()">
+                <i class="fa fa-bars"></i> Shop by Category
+            </span>
+            <a href="#"><i class="fa fa-fire"></i> Trending</a>
+            <a href="#"><i class="fa fa-star"></i> Best Sellers</a>
+            <a href="#"><i class="fa fa-bolt"></i> New Releases</a>
+            <a href="#"><i class="fa fa-tag"></i> Top Deals</a>
+        </div>
+
+        <div class = "hero">
         <header>
             <h1> IoTBay Marketplace </h1>
             <h2>Your one-stop shop for all things IoT!</h2>
         </header>
+        <div class="main-content">
+        <h2>Featured Devices</h2>
+
+        <div class="product-grid">
+            <div class="product-card">
+            <img src="images/googlehome.jpg" alt="Google Home" class="product-img">
+            <div class="product-info">
+                <h3>Google Home</h3>
+                <p><strong>$100.00</strong></p>
+                <button class="btn btn-primary">View Product</button>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="images/ring.jpg" alt="Ring Doorbell" class="product-img">
+            <div class="product-info">
+                <h3>Ring Doorbell</h3>
+                <p><strong>$120.00</strong></p>
+                <button class="btn btn-primary">View Product</button>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="images/smartlight.jpg" alt="Smart Light" class="product-img">
+            <div class="product-info">
+                <h3>Smart Light</h3>
+                <p><strong>$40.00</strong></p>
+                <button class="btn btn-primary">View Product</button>
+            </div>
+            </div>
+
+            <div class="product-card">
+            <img src="images/smartplug.jpg" alt="Smart Plug" class="product-img">
+            <div class="product-info">
+                <h3>Smart Plug</h3>
+                <p><strong>$25.00</strong></p>
+                <button class="btn btn-primary">View Product</button>
+            </div>
+            </div>
+        </div>
 
         </div>
 
         <script src="nav.js"></script>
+
+        <footer>
+            <p>&copy; 2024 IoTBay Marketplace. All rights reserved.</p>
+        </footer>
+
     </body>
 
 </html>

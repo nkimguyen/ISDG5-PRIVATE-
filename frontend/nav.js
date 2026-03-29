@@ -33,3 +33,13 @@ window.onclick = function(event) {
     }
   }
 }
+
+function openNav() {
+  document.getElementById("sideNav").style.width = "250px";
+  document.getElementById("overlay").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0";
+  document.getElementById("overlay").style.display = "none";
+}
