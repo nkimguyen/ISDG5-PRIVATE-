@@ -16,9 +16,6 @@ def init_db():
             status TEXT DEFAULT 'active'
         )
     """)
-
-
-    #testing my gitHub connection
     conn.commit()
 
     print("Table created")
