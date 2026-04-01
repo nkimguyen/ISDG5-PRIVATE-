@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+
+
   logoutButton.addEventListener("click", function () {
     sessionStorage.clear();
     window.location.href = "logout.html"
