@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (user) {
     if (user.role === "staff") {
-      welcomeMessage.textContent = `Welcome staff! Your email is ${user.email}`;
+      welcomeMessage.textContent = `Welcome staff ${user.name}! Your email is ${user.email}`;
     } else {
-      welcomeMessage.textContent = `Welcome! Your email is ${user.email}`;
+      welcomeMessage.textContent = `Welcome ${user.name}! Your email is ${user.email}`;
     }
   }
 
