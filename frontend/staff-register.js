@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = document.getElementById("staff_email").value;
     const staffId = document.getElementById("staff_id").value;
 
-    const user = {"firstName": firstName, "lastName": lastName, "email": email, "staffId": staffId, "role": "staff"
+    const user = {"name": `${firstName} ${lastName}`, "email": email, "staffId": staffId, "role": "staff"
     };
 
     sessionStorage.setItem("user", JSON.stringify(user));
